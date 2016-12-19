@@ -1,0 +1,12 @@
+<ul class="pagination">
+  {{#if prev}}
+  <li class="active">
+    <a href="{{page_url prev}}"><i class="material-icons">Newer</i></a>
+  </li>
+  {{/if}}
+  {{#if next}}
+  <li class="active">
+    <a href="{{page_url next}}"><i class="material-icons">Older</i></a>
+  </li>
+  {{/if}}
+</ul>

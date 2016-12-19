@@ -1,0 +1,49 @@
+
+{{!Responsive and meta tags}}
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#263238">
+
+{{#is "home"}}
+<title>{{meta_title}} - {{meta_description}}</title>
+{{else}}
+<title>{{meta_title}}</title>
+{{/is}}
+
+<meta name="description" content="{{meta_description}}">
+
+{{! Icons }}
+<link rel="icon" type="image/png" href="{{asset "img/favicon.png"}}">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+{{! CSS }}
+
+
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+<link type="text/css" rel="stylesheet" href="{{asset "assets/css/babyshung.css"}}" media="screen,projection">
+
+<!-- JavaScript -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+
+{{!--
+
+
+
+<link rel="stylesheet" href="{{asset "css/bootstrap.min.css"}}">
+<link rel="stylesheet" href="{{asset "css/main.css"}}">
+<link type="text/css" rel="stylesheet" href="{{asset "assets/css/materialize.min.css"}}" media="screen,projection">
+<link type="text/css" rel="stylesheet" href="{{asset "assets/css/style.min.css"}}" media="screen,projection"> 
+--}}
+
+
+{{! Fonts }}
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+
+<!-- Facebook OpenGraph tags -->
+<meta property="og:title" content="{{@blog.title}}" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="{{@blog.url}}/" />
+<meta property="og:image" content="{{@blog.logo}}" />
