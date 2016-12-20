@@ -3,19 +3,30 @@
     <div class="nav-wrapper grey darken-4">
       {{> spinner}}
         
+      <a href="#!" class="brand-logo"><i class="material-icons">dashboard</i>{{@blog.title}}</a>
         
-      <a href="#!" class="brand-logo"><i class="material-icons">cloud</i>Logo</a>
       <ul class="right hide-on-med-and-down">
+        {{!linkedin}}
         <li><a href="https://linkedin.com/in/haozheng1" class="btn-floating" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+        {{!github}}
         <li><a href="https://github.com/babyshung" class="btn-floating" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+        {{!stackoverflow}}
         <li><a href="https://stackoverflow.com/users/2954106/babyshung" class="btn-floating" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a></li>
+        {{!instagram}}
         <li><a href="https://www.instagram.com/babyshung" class="btn-floating" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+        {{!spotify}}
         <li><a href="https://play.spotify.com/user/babyshung" class="btn-floating" target="_blank"><i class="fa fa-spotify" aria-hidden="true"></i></a></li>
+        {{!vimeo}}
         <li><a href="https://vimeo.com/user45600639" class="btn-floating" target="_blank"><i class="fa fa-vimeo" aria-hidden="true"></i></a></li>
+        {{!facebook}}
         {{#if @blog.facebook }}<li><a href="#" class="btn-floating" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>{{/if}}
+        {{!twitter}}
         {{#if @blog.twitter }}<li><a href="#" class="btn-floating" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>{{/if}}
+        {{!rss}}
         <li><a href="{{@blog.url}}/rss/" class="btn-floating"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
+        {{!mail}}
         <li><a href="mailto:babyshung8@gmail.com" class="btn-floating"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+        {{!about}}
         <li><a href="/about" class="btn-floating"><i class="fa fa-user" aria-hidden="true"></i></a></li>
       </ul>
     </div>

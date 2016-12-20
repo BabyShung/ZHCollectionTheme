@@ -5,17 +5,25 @@
 
 {{!-- Everything inside the #post tags pulls data from the page --}}
 {{#post}}
-<div class="post_wraper" style="background-color:#fff;height:100%;width:100%">!!!!!
-<main class="content" role="main" >
-    <article class="{{post_class}}">
-        <header class="post-header">
-            <h1 class="post-title">{{title}}</h1>
+<main class="container" >
+    
+    <div class="row">
+        <div class="col s12">
+            <div class="card hoverable">
+            <div class="card-content center-align">
+                <article class="{{post_class}}">
+        <header class="">
+            <h3 class="valign">{{title}}</h1>
         </header>
-        <section class="post-content">
+        <section class="valign">
             {{content}}
         </section>
     </article>
-    {{> "footer"}}
+            </div>
+            </div>
+
+        </div>
+      </div>
+    
 </main>
-</div>
 {{/post}}
