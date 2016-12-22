@@ -33,3 +33,18 @@ nav a.btn-floating:hover {
 }
 
 /** **/
+
+
+.otherCopyRights {
+    font-size: 10px!important;
+}
+
+.aboutButton {
+    text-align:  center!important;
+    background-color: #ffffff!important;
+}
+
+.card-action, .card-action a {
+    text-transform: none!important;
+
+}

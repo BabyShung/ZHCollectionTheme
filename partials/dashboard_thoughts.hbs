@@ -1,18 +1,19 @@
 {{! Thoughts Blog}}
 <div class="col s12 m7 l4">
 <div class="card Medium hoverable">
+    <div class="collection">
     <div class="card-action">
       <a href="/blog" target="_blank"><i class="fa fa-pencil" aria-hidden="true"></i> Thoughts</a>
     </div>
-    <div class="collection">
+    
 
        {{#foreach posts limit="3"}}
             {{#has tag="Thoughts"}}
         
-                        <div class="card-content">
+                        <div class="card-action">
                             <div class="card-header">
                                 {{!post meta (time posted, tags)}}
-                                <div class="card-meta blue-grey-text text-lighten-2 right">
+                                <div class="card-meta blue-grey-text text-darken-1 right">
                                     <time class="card-date" datetime="{{date format='DD/MM/YYYY'}}">
                                         {{date format='DD/MM/YYYY'}}
                                     </time>
@@ -21,7 +22,7 @@
                                 <a href="{{url}}" class="amber-text text-darken-1">{{title}}</a>
                             </div>
                             {{!Post Content with limitation of 50 words}}
-                            <p><a href="{{url}}" class="grey-text text-darken-2">{{excerpt words="50"}}&hellip;</a></p>
+                            <p><a href="{{url}}" class="grey-text text-lighten-1">{{excerpt characters="50"}}&hellip;</a></p>
                         </div>
             {{/has}}
        {{/foreach}}
