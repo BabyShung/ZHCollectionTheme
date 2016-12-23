@@ -32,6 +32,10 @@ nav a.btn-floating:hover {
     background-color: #2b2a2a!important;
 }
 
+nav a.brand-logo {
+	font-family: 'Dancing Script', cursive;
+}
+
 /** **/
 
 
