@@ -14,4 +14,15 @@ $(document).ready(function() {
 			scrollTop : 0                       // Scroll to top of body
 		}, 500);
 	});
+	
+	
+	
+  // var options = [
+//     {selector: 'nav', offset: 0, callback: function(el) {
+//       $('footer ul').css('opacity', '1.0');
+//       Materialize.showStaggeredList($(el));
+//     } }
+//   ];
+//   Materialize.scrollFire(options);
+	
 });

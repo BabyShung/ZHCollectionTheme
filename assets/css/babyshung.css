@@ -38,7 +38,7 @@ nav a.btn-floating:hover {
     background-color: #383636!important;
 }
 
-nav a.brand-logo {
+nav a.brand-logo, .zh-blogTitle {
 	font-family: 'Dancing Script', cursive;
 }
 
