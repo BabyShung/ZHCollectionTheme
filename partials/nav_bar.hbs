@@ -1,32 +1,74 @@
 <div class="navbar-fixed">
   <nav>
     <div class="nav-wrapper grey darken-4">
+        
         {{! dashboard icon + blog title}}
-        <a href="{{@blog.url}}" class="brand-logo zh-dashboard-spin"><i class="material-icons"></i><span>{{@blog.title}}</span></a>
-      {{! social network icons}}
-      <ul class="right hide-on-med-and-down">
+        <a href="{{@blog.url}}" class="animated fadeIn brand-logo zh-dashboard-spin">
+            <span><i class="material-icons"></i></span>
+            <span>{{@blog.title}}</span>
+        </a>
+        
+      {{! social network icons, and this is not visible on tablet or below}}
+      <ul class="right hide-on-med-and-down zh-nav-icons-list">
         {{!linkedin}}
-        <li><a href="https://linkedin.com/in/haozheng1" class="btn-floating" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-        {{!github}}
-        <li><a href="https://github.com/babyshung" class="btn-floating" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+        {{> animated_li_start}}
+            <a href="https://linkedin.com/in/haozheng1" class="btn-floating" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+        {{> animated_li_end}}
+        
+          {{!github}}
+        {{> animated_li_start}}
+        <a href="https://github.com/babyshung" class="btn-floating" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+        {{> animated_li_end}}
+          
         {{!stackoverflow}}
-        <li><a href="https://stackoverflow.com/users/2954106/babyshung" class="btn-floating" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a></li>
+        {{> animated_li_start}}
+        <a href="https://stackoverflow.com/users/2954106/babyshung" class="btn-floating" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
+        {{> animated_li_end}}
+        
         {{!instagram}}
-        <li><a href="https://www.instagram.com/babyshung" class="btn-floating" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+        {{> animated_li_start}}
+        <a href="https://www.instagram.com/babyshung" class="btn-floating" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        {{> animated_li_end}}
+        
         {{!spotify}}
-        <li><a href="https://play.spotify.com/user/babyshung" class="btn-floating" target="_blank"><i class="fa fa-spotify" aria-hidden="true"></i></a></li>
+        {{> animated_li_start}}
+        <a href="https://play.spotify.com/user/babyshung" class="btn-floating" target="_blank"><i class="fa fa-spotify" aria-hidden="true"></i></a>
+        {{> animated_li_end}}
+        
         {{!vimeo}}
-        <li><a href="https://vimeo.com/user45600639" class="btn-floating" target="_blank"><i class="fa fa-vimeo" aria-hidden="true"></i></a></li>
+        {{> animated_li_start}}
+        <a href="https://vimeo.com/user45600639" class="btn-floating" target="_blank"><i class="fa fa-vimeo" aria-hidden="true"></i></a>
+        {{> animated_li_end}}
+        
         {{!facebook}}
-        {{#if @blog.facebook }}<li><a href="#" class="btn-floating" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>{{/if}}
+        {{#if @blog.facebook }}
+        {{> animated_li_start}}
+        <a href="#" class="btn-floating" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        {{> animated_li_end}}
+        {{/if}}
+        
         {{!twitter}}
-        {{#if @blog.twitter }}<li><a href="#" class="btn-floating" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>{{/if}}
+        {{#if @blog.twitter }}
+        {{> animated_li_start}}
+        <a href="#" class="btn-floating" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        {{> animated_li_end}}
+        {{/if}}
+          
         {{!rss}}
-        <li><a href="{{@blog.url}}/rss/" class="btn-floating"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
+        {{> animated_li_start}}
+        <a href="{{@blog.url}}/rss/" class="btn-floating"><i class="fa fa-rss" aria-hidden="true"></i></a>
+        {{> animated_li_end}}
+          
         {{!mail}}
-        <li><a href="mailto:babyshung8@gmail.com" class="btn-floating"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+        {{> animated_li_start}}
+        <a href="mailto:babyshung8@gmail.com" class="btn-floating"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+        {{> animated_li_end}}
+        
         {{!about}}
-        <li><a href="/about" class="btn-floating"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+        {{> animated_li_start}}
+        <a href="/about" class="btn-floating"><i class="fa fa-user" aria-hidden="true"></i></a>
+        {{> animated_li_end}}
+          
       </ul>
     </div>
   </nav>
