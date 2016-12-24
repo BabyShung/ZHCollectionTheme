@@ -35,7 +35,7 @@ nav a.btn-floating {
 }
 
 nav a.btn-floating:hover {
-    background-color: #2b2a2a!important;
+    background-color: #383636!important;
 }
 
 nav a.brand-logo {
@@ -56,5 +56,150 @@ nav a.brand-logo {
 
 .card-action, .card-action a {
     text-transform: none!important;
-
 }
+
+
+/* ZH Icon Wobble Vertical */
+@-webkit-keyframes zh-icon-wobble-vertical {
+  16.65% {
+    -webkit-transform: translateY(6px);
+    transform: translateY(6px);
+  }
+  33.3% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+  49.95% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+  66.6% {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+  }
+  83.25% {
+    -webkit-transform: translateY(1px);
+    transform: translateY(1px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes zh-icon-wobble-vertical  {
+  16.65% {
+    -webkit-transform: translateY(6px);
+    transform: translateY(6px);
+  }
+  33.3% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+  49.95% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+  66.6% {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+  }
+  83.25% {
+    -webkit-transform: translateY(1px);
+    transform: translateY(1px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+.zh-icon-wobble-vertical  {
+  display: inline-block;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.zh-icon-wobble-vertical :before {
+  position: absolute;
+  top: 0;
+  left:0;
+  right:0;
+  margin-left:auto;
+  margin-right:auto;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+.zh-icon-wobble-vertical :hover:before, .zh-icon-wobble-vertical :focus:before, .zh-icon-wobble-vertical :active:before {
+  -webkit-animation-name: zh-icon-wobble-vertical ;
+  animation-name: zh-icon-wobble-vertical ;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+/* Icon Spin */
+.zh-icon-spin {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  padding-right: 2.2em;
+}
+.zh-icon-spin:before {
+  content: "\f009";
+  position: absolute;
+  right: 1em;
+  padding: 0 1px;
+  font-family: FontAwesome;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+.zh-icon-spin:hover:before, .zh-icon-spin:focus:before, .zh-icon-spin:active:before {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+
+/* ZH Icon Grow Rotate 
+.zh-icon-grow-rotate {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.zh-icon-grow-rotate:before {
+  position: absolute;
+  top: 0;
+  left:0;
+  right:0;
+  margin-left:auto;
+  margin-right:auto;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.zh-icon-grow-rotate:hover:before, .zh-icon-grow-rotate:focus:before, .zh-icon-grow-rotate:active:before {
+  -webkit-transform: scale(1.5) rotate(12deg);
+  transform: scale(1.5) rotate(12deg);
+}
+*/

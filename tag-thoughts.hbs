@@ -7,14 +7,8 @@
                         <div class="card-action">
                             <div class="card-header">
                                 {{!post meta (time posted, tags)}}
-                                <div class="card-meta blue-grey-text text-lighten-2 right">
-                                    <time class="card-date" datetime="{{date format='MMM DD YYYY'}}">
-                                        <div class="valign-wrapper">
-                                            <i class="material-icons valign">&#xE192;&nbsp;</i> 
-                                            {{date format='MMM DD YYYY'}}
-                                        </div>
-                                        
-                                    </time>
+                                <div class="card-meta blue-grey-text text-lighten-2">
+                                    {{> dateControl}}
                                 </div>
                                 {{!Post Title}}
                                 <h2 class="card-title">
