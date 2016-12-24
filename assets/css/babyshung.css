@@ -142,22 +142,24 @@ nav a.brand-logo {
   animation-iteration-count: 1;
 }
 
-/* Icon Spin */
-.zh-icon-spin {
+/* Icon Spin*/
+.zh-dashboard-spin i{
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px transparent;
   position: relative;
-  padding-right: 2.2em;
+  padding-right: 3em;
+  margin-right: 0px!important;
 }
-.zh-icon-spin:before {
-  content: "\f009";
+.zh-dashboard-spin i:before {
+
+  content: "dashboard";
   position: absolute;
   right: 1em;
   padding: 0 1px;
-  font-family: FontAwesome;
+  font-family: Material Icons;
   -webkit-transition-duration: 1s;
   transition-duration: 1s;
   -webkit-transition-property: transform;
@@ -165,11 +167,10 @@ nav a.brand-logo {
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
 }
-.zh-icon-spin:hover:before, .zh-icon-spin:focus:before, .zh-icon-spin:active:before {
+.zh-dashboard-spin:hover i:before, .zh-dashboard-spin i:focus:before, .zh-dashboard-spin i:active:before {
   -webkit-transform: rotate(360deg);
   transform: rotate(360deg);
 }
-
 
 /* ZH Icon Grow Rotate 
 .zh-icon-grow-rotate {
