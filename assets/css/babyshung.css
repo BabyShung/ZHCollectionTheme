@@ -229,9 +229,19 @@ nav a.brand-logo, .zh-blogTitle {
     animation-delay:1.3s
 }
 
-
 .fadeInUp {
   -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp;
   animation-timing-function: ease-out;
 }
+
+/**   **/
+
+.zh-indicator {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -19px; /* -1 * image width / 2 */
+  margin-top: -19px; /* -1 * image height / 2 */
+}
+
