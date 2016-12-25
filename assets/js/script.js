@@ -20,8 +20,11 @@ $(document).ready(function() {
   			url: null,
 	  attribute: 'data-src',
 	    timeout: 2000 
-	},function() {
-  		//  console.log
+	},function(el) {
+  		// remove indicator
+  		el.next().removeClass('active').hide();
+
+
 	});
 
 	
