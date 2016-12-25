@@ -15,6 +15,15 @@ $(document).ready(function() {
 		}, 500);
 	});
 	
+	//iframe delay
+    $('iframe').easyframe({
+  			url: null,
+	  attribute: 'data-src',
+	    timeout: 2000 
+	},function() {
+  		//  console.log
+	});
+
 	
 	
   // var options = [
