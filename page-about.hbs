@@ -7,23 +7,31 @@
 {{#post}}
 <main class="container" >
     
-    <div class="row">
+    <div class="row animated fadeInUp">
         <div class="col s12">
             <div class="card hoverable">
-            <div class="card-content center-align">
-                <article class="{{post_class}}">
-        <header class="">
-            <h3 class="valign">{{title}}</h3>
-        </header>
-        <section class="valign">
-            {{content}}
-        </section>
-    </article>
+                
+                {{! spacing}}
+                <div class="row"></div>
+                
+                <div class="card-content center-align">
+                    <article class="{{post_class}}">
+                        <header class="">
+                            <img src="{{asset "img/favicon.png"}}" alt="" class="circle hoverable">
+                            <h3 class="valign">{{title}}</h3>
+                        </header>
+                    <section class="valign container">
+                        {{content}}
+                    </section>
+                    </article>
+                </div>
+                
+                {{! spacing}}
+                <div class="row"></div>
+                <div class="row"></div>
+                <div class="row"></div>
             </div>
-            </div>
-
         </div>
-      </div>
-    
+    </div>
 </main>
 {{/post}}

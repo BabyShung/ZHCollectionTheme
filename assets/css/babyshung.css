@@ -44,6 +44,9 @@ nav a.brand-logo, .zh-blogTitle {
 
 /** **/
 
+.card, .card-action, .card .collection {
+    border-radius: 6px;
+}
 
 .otherCopyRights {
     font-size: 10px!important;
