@@ -19,7 +19,7 @@ $(document).ready(function() {
     $('iframe').easyframe({
   			url: null,
 	  attribute: 'data-src',
-	    timeout: 2000 
+	    timeout: 2500 
 	},function(el) {
   		// remove indicator
   		el.next().removeClass('active').hide();
