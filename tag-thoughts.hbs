@@ -2,7 +2,7 @@
         <main class="zh-div-list">
             {{#foreach posts}}
             <div class="row animated fadeInUp">
-                <div class="col s12 m12 l8 offset-l2">
+                <div class="col s12 m12 l4 offset-l4">
                     <article class="card hoverable">
                         <div class="card-content">
                             <div class="card-header">
@@ -12,27 +12,22 @@
                                 </div>
                                 {{!Post Title}}
                                 <h2 class="card-title">
-                                    <a href="{{url}}">{{title}}</a>
+                                    <a class="amber-text text-darken-2" href="{{url}}">{{title}}</a>
                                 </h2>
                             </div>
                             
                             {{!Post Content with limitation of 50 words}}
-                            <p>{{excerpt characters="95"}}&hellip;</p>
+                            <p class="grey-text text-darken-1">{{excerpt characters="95"}}&hellip;</p>
                         </div>
                         
+                        <div class="row"></div>
                         <div class="divider"></div>
                         
                         <div class="card-content">
-                            <a href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}" class="btn-floating fb" data-width="580" height="235">
-                                <i class="fa fa-facebook" aria-hidden="true"></i>
-                            </a>
-                            <a href="https://twitter.com/intent/tweet?text={{encode title}}&amp;url={{url absolute="true"}}" class="btn-floating tw" data-width="580" height="235">
-                                <i class="fa fa-twitter" aria-hidden="true"></i>
-                            </a>
-                            <a href="https://plus.google.com/share?url={{url absolute="true"}}" class="btn-floating gp" data-width="580" height="235">
-                                <i class="fa fa-google-plus" aria-hidden="true"></i>
-                            </a>
-                            <a class="waves-effect waves-light btn right" href="{{url}}">read more</a>
+                            {{! social network share btns}}
+                            {{> "share-post"}}
+                            
+                            <a class="waves-effect waves-light btn right hvr-icon-wobble-horizontal amber darken-2" href="{{url}}">read more&nbsp;</a>
                         </div>
                     </article>
                 </div>

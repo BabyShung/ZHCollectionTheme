@@ -369,63 +369,63 @@ ul.zh-nav-icons-list li {
 **/
 
 ul.zh-nav-icons-list li:nth-child(1){
-    -webkit-animation-delay:1.3s;
-    animation-delay:1.3s
-}
-
-ul.zh-nav-icons-list li:nth-child(2){
     -webkit-animation-delay:1.4s;
     animation-delay:1.4s
 }
 
-ul.zh-nav-icons-list li:nth-child(3){
+ul.zh-nav-icons-list li:nth-child(2){
     -webkit-animation-delay:1.5s;
     animation-delay:1.5s
 }
 
-ul.zh-nav-icons-list li:nth-child(4){
+ul.zh-nav-icons-list li:nth-child(3){
     -webkit-animation-delay:1.6s;
     animation-delay:1.6s
 }
 
-ul.zh-nav-icons-list li:nth-child(5){
+ul.zh-nav-icons-list li:nth-child(4){
     -webkit-animation-delay:1.7s;
     animation-delay:1.7s
 }
 
-ul.zh-nav-icons-list li:nth-child(6){
+ul.zh-nav-icons-list li:nth-child(5){
     -webkit-animation-delay:1.8s;
     animation-delay:1.8s
 }
 
-ul.zh-nav-icons-list li:nth-child(7){
+ul.zh-nav-icons-list li:nth-child(6){
     -webkit-animation-delay:1.9s;
     animation-delay:1.9s
 }
 
-ul.zh-nav-icons-list li:nth-child(8){
+ul.zh-nav-icons-list li:nth-child(7){
     -webkit-animation-delay:2.0s;
     animation-delay:2.0s
 }
 
-ul.zh-nav-icons-list li:nth-child(9){
+ul.zh-nav-icons-list li:nth-child(8){
     -webkit-animation-delay:2.1s;
     animation-delay:2.1s
 }
 
-ul.zh-nav-icons-list li:nth-child(10){
+ul.zh-nav-icons-list li:nth-child(9){
     -webkit-animation-delay:2.2s;
     animation-delay:2.2s
 }
 
-ul.zh-nav-icons-list li:nth-child(11){
+ul.zh-nav-icons-list li:nth-child(10){
     -webkit-animation-delay:2.3s;
     animation-delay:2.3s
 }
 
+ul.zh-nav-icons-list li:nth-child(11){
+    -webkit-animation-delay:2.4s;
+    animation-delay:2.4s
+}
+
 #collection-col-1 {
-    -webkit-animation-delay:0.6s;
-    animation-delay:0.6s
+    -webkit-animation-delay:0.3s;
+    animation-delay:0.3s
 }
 
 #collection-col-2 {
@@ -435,8 +435,8 @@ ul.zh-nav-icons-list li:nth-child(11){
 
 
 #collection-col-3 {
-    -webkit-animation-delay:0.8s;
-    animation-delay:0.8s
+    -webkit-animation-delay:0.7s;
+    animation-delay:0.7s
 }
 
 .fadeInUp {
@@ -467,3 +467,42 @@ ul.zh-nav-icons-list li:nth-child(11){
 .zh-declaration li{
     font-size: 0.8em!important;
 }
+
+/** Social media**/
+
+.zh-social-share .btn-floating {
+  margin-right: 10px!important;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.zh-social-share .fa-facebook {
+  background-color: #3b5998!important;
+}
+
+.zh-social-share .fa-google-plus {
+  background-color: #dd4b39!important;
+}
+
+.zh-social-share .fa-linkedin {
+  background-color: #007bb6!important;
+}
+
+.zh-social-share .fa-pinterest {
+  background-color: #cb2027!important;
+}
+
+.zh-social-share .fa-stumbleupon {
+  background-color: #EB4823!important;
+}
+
+.zh-social-share .fa-tumblr {
+  background-color: #32506d!important;
+}
+
+.zh-social-share .fa-twitter {
+  background-color: #00aced!important;
+}
+
+
