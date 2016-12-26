@@ -4,24 +4,27 @@
 <div class="row"> </div>
 
 <footer class="page-footer z-depth-1">
-          <div class="container">
-            <div class="row">
-              <div class="col l6 s12">
-                  <ul id="staggered-test">
-                    <li><h5 class="white-text zh-blogTitle">{{@blog.title}}</h5></li>
-                    <li><p class="grey-text text-lighten-4">{{@blog.description}}</p></li>
-                  </ul>
-                
-                
-              </div>
-              <div class="col l4 offset-l2 s12">
-                  
-              </div>
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <ul id="staggered-test">
+                    <li><h4 class="white-text zh-blogTitle">{{@blog.title}}</h4></li>
+                    <li><h5><p class="grey-text text-lighten-4 zh-blogDescription">{{@blog.description}}</p></h5></li>
+                </ul>
             </div>
-          </div>
-          <div class="footer-copyright">
-            <div class="container center-align">
+                
+            {{! Website Statement}}
+            <div class="col l4 offset-l2 s12">
+                <ul class="zh-declaration">
+                    <li class="grey-text text-lighten-1 right-align">Website source code at <a class="orange-text text-lighten-1" href="https://github.com/BabyShung/babyshung" target="_blank">my github repo</a></li>
+                    <li class="grey-text text-lighten-1 right-align">Will be launched at <a class="orange-text text-lighten-1" href="http://marketplace.ghost.org/themes/free/" target="_blank">Ghost Themes</a> for free</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container center-align">
             © 2016 BabyShung
-            </div>
-          </div>
-        </footer>
+        </div>
+    </div>
+</footer>

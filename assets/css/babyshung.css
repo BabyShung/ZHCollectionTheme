@@ -38,7 +38,7 @@ nav a.btn-floating:hover {
     background-color: #383636!important;
 }
 
-nav a.brand-logo, .zh-blogTitle {
+nav a.brand-logo, .zh-blogTitle, .zh-blogDescription {
 	font-family: 'Dancing Script', cursive;
 }
 
@@ -455,3 +455,11 @@ ul.zh-nav-icons-list li:nth-child(11){
   margin-top: -19px; /* -1 * image height / 2 */
 }
 
+.zh-aboutme {
+    -webkit-animation-delay:0.4s;
+    animation-delay:0.4s
+}
+
+.zh-declaration li{
+    font-size: 0.8em!important;
+}
