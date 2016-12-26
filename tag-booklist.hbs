@@ -1,43 +1,26 @@
 {{!< default}}
-        <main class="zh-div-list">
-            {{#foreach posts}}
-            <div class="row animated fadeInUp">
-                <div class="col s12 m12 l8 offset-l2">
-                    <article class="card hoverable">
-                        <div class="card-content">
-                            <div class="card-header">
-                                {{!post meta (time posted, tags)}}
-                                <div class="card-meta blue-grey-text text-lighten-2">
-                                    {{> shared_dateControl}}
-                                </div>
-                                {{!Post Title}}
-                                <h2 class="card-title">
-                                    <a href="{{url}}">{{title}}</a>
-                                </h2>
-                            </div>
-                            
-                            {{!Post Content with limitation of 50 words}}
-                            <p>{{excerpt characters="95"}}&hellip;</p>
-                        </div>
-                        
-                        <div class="divider"></div>
-                        
-                        <div class="card-content">
-                            <a href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}" class="btn-floating fb" data-width="580" height="235">
-                                <i class="fa fa-facebook" aria-hidden="true"></i>
-                            </a>
-                            <a href="https://twitter.com/intent/tweet?text={{encode title}}&amp;url={{url absolute="true"}}" class="btn-floating tw" data-width="580" height="235">
-                                <i class="fa fa-twitter" aria-hidden="true"></i>
-                            </a>
-                            <a href="https://plus.google.com/share?url={{url absolute="true"}}" class="btn-floating gp" data-width="580" height="235">
-                                <i class="fa fa-google-plus" aria-hidden="true"></i>
-                            </a>
-                            <a class="waves-effect waves-light btn right" href="{{url}}">read more</a>
-                        </div>
-                    </article>
+
+{{! Booklist tag}}
+<main class="zh-div-list">
+    <div class="row animated fadeInUp">
+        <div class="col s12 m12 l4 offset-l4">
+            <div class="card Medium hoverable">
+                <div class="card-action">
+                    <h5 class="grey-text text-darken-1">My Book List</h5>
                 </div>
+               
+                <div class="card-content center-align">
+                    <h3>{{> shared_comingsoon}}</h3>
+                </div>
+                
+                <div class="row"></div>
+                <div class="row"></div>
+                <div class="row"></div>
+                <div class="row"></div>
             </div>
-            {{/foreach}}
-            {{! Blog pagination }}
-            {{#if pagination}}{{pagination}}{{/if}}
-        </main>
+        </div>      
+    </div>
+</main>
+
+
+    
