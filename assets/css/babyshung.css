@@ -460,18 +460,18 @@ ul.zh-nav-icons-list li:nth-child(11){
     animation-delay:0.4s;
 }
 
-.zh-aboutme section {
+.zh-aboutme section, .zh-post-content {
     font-size: 1.2em!important;
 }
 
-.zh-declaration li{
+.zh-declaration li {
     font-size: 0.8em!important;
 }
 
 /** Social media**/
 
 .zh-social-share .btn-floating {
-  margin-right: 10px!important;
+  margin-right: 8px!important;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;

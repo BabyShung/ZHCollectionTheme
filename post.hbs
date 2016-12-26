@@ -2,12 +2,11 @@
 {{#post}}
     <main>
         <div class="row">
-            <div class="post col s12 m12 l6 offset-l3">
+            <div class="post col s12 m12 l8 offset-l2">
                     <article class="animated fadeIn card hoverable">
                         
                         <div class="card-action">
-                            
-                            <h3 class="truncate hvr-forward">{{title}}</h3>
+                            <h3 class="truncate hvr-forward grey-text text-darken-3">{{title}}</h3>
                             {{> shared_dateControl}}
                         </div>
                         
@@ -19,9 +18,10 @@
                                     </div>
                             
                         </div>
-                        <div class="card-action"> {{!Content here}}
-                               {{content}}
-                            </div>
+                        <div class="card-action grey-text text-darken-3 zh-post-content">
+                            {{!Content here}}
+                            {{content}}
+                        </div>
                             <div class="row"></div>
                             <div class="row"></div>
                         
