@@ -25,6 +25,9 @@
                             <div class="row"></div>
                             <div class="row"></div>
                         
+                        {{> pagination}}
+                        
+                        
                         {{! disqus }}
                         <div class="card-action">
                             {{> disqus}}
@@ -36,26 +39,7 @@
             
             
             
-            <div class="row"> {{! Previous and Next page navigation}}
-                <div class="col s12 m8 offset-m2">
-                    {{#next_post}}
-                    <a href="{{url}}" class="left">
-                        <button class="btn-floating">
-                            <i class="material-icons">&#xE5C4;</i>
-                        <div class="ripple-container"></div></button>
-                        Newer                    
-                    </a>
-                    {{/next_post}}
-                    {{#prev_post}}
-                    <a href="{{url}}" class="right">
-                        Older
-                        <button class="btn-floating">
-                            <i class="material-icons">&#xE5C8;</i>
-                        </button>
-                    </a>
-                    {{/prev_post}}
-                </div>
-            </div>
+
             
             
         </main>

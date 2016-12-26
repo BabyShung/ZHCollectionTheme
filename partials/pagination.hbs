@@ -1,37 +1,17 @@
-            <div class="row">
-                <div class="col s12 m6 offset-m3">
-                    {{#if prev}}
-                    <a href="{{page_url prev}}" class="left">
-                        <button class="btn-floating">
-                            <i class="material-icons">&#xE5C4;</i>
-                        <div class="ripple-container"></div></button>
-                        Newer                    
-                    </a>
-                    {{else}}
-                    {{/if}}
-                    {{#if next}}
-                    <a href="{{page_url next}}" class="right">
-                        Older
-                        <button class="btn-floating">
-                            <i class="material-icons">&#xE5C8;</i>
-                        </button>
-                    </a>
-                    {{else}}
-                    {{/if}}
+
+<div class="row"> {{! Previous and Next page navigation}}
+                <div class="col s12 m8 offset-m2 l10 offset-l1">
+                    {{#next_post}}
+                        <a href="{{url}}" class="right amber-text text-darken-2 hvr-icon-forward hvr-grow">
+                                &nbsp;&nbsp;Newer                    
+                        </a>
+                    {{/next_post}}
+                    {{#prev_post}}
+                        <a href="{{url}}" class="left amber-text text-darken-2 hvr-icon-back hvr-grow">
+                            Older&nbsp;&nbsp;
+                        </a>
+                    {{/prev_post}}
+                    <div class="row"></div>
                 </div>
             </div>
 
-{{!-- 
-<ul class="pagination">
-  {{#if prev}}
-  <li class="active">
-    <a href="{{page_url prev}}"><i class="material-icons">Newer</i></a>
-  </li>
-  {{/if}}
-  {{#if next}}
-  <li class="active">
-    <a href="{{page_url next}}"><i class="material-icons">Older</i></a>
-  </li>
-  {{/if}}
-</ul>
---}}
