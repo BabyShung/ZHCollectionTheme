@@ -15,7 +15,7 @@ If you don't, just create a post and do the above steps.
 
 **3.Blog**
 
-You need to setup the below before you goto htts://[yourSite]/blog
+You need to setup the below before you goto http://[yourSite]/blog
 
 Since the page for showing all the posts is not in index.hbs, I moved it to a static page.
 
