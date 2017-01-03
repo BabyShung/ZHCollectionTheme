@@ -15,42 +15,27 @@
             <a href="{{> shared_linkedIn}}" class="btn-floating" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
         {{> animated_li_end}}
         
-          {{!github}}
+        {{!github}}
         {{> animated_li_start}}
         <a href="{{> shared_github}}" class="btn-floating" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
         {{> animated_li_end}}
           
-        {{!stackoverflow}}
-        {{> animated_li_start}}
-        <a href="https://stackoverflow.com/users/2954106/babyshung" class="btn-floating" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
-        {{> animated_li_end}}
-        
-        {{!instagram}}
-        {{> animated_li_start}}
-        <a href="https://www.instagram.com/babyshung" class="btn-floating" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-        {{> animated_li_end}}
-        
         {{!spotify}}
         {{> animated_li_start}}
         <a href="https://play.spotify.com/user/babyshung" class="btn-floating" target="_blank"><i class="fa fa-spotify" aria-hidden="true"></i></a>
         {{> animated_li_end}}
         
-        {{!vimeo}}
-        {{> animated_li_start}}
-        <a href="https://vimeo.com/user45600639" class="btn-floating" target="_blank"><i class="fa fa-vimeo" aria-hidden="true"></i></a>
-        {{> animated_li_end}}
-        
         {{!facebook}}
         {{#if @blog.facebook }}
         {{> animated_li_start}}
-        <a href="#" class="btn-floating" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        <a href="{{facebook_url}}" class="btn-floating" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
         {{> animated_li_end}}
         {{/if}}
         
         {{!twitter}}
         {{#if @blog.twitter }}
         {{> animated_li_start}}
-        <a href="#" class="btn-floating" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        <a href="{{twitter_url}}" class="btn-floating" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
         {{> animated_li_end}}
         {{/if}}
           

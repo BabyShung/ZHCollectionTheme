@@ -1,86 +1,51 @@
 {{!< default}}
 
-{{!-- This is a page template. A page outputs content just like any other post, and has all the same
-    attributes by default, but you can also customise it to behave differently if you prefer. --}}
-{{#post}}
-<main class="container" >
-    
-    {{#foreach posts}}
-    a23
-    {{/foreach}}
-    <div class="row">
-        <div class="col s12">
-            <div class="card hoverable">
-            <div class="card-content center-align">
-                <article class="{{post_class}}">
-        <header class="">
-            <h3 class="valign">{{title}}</h1>
-        </header>
-        <section class="valign">
-            {{content}}
-        </section>
-    </article>
-            </div>
-            </div>
-
-        </div>
-      </div>
-    
-</main>
-{{/post}}
-
-
-{{!-- 
-{{#post}}
-    <main> 
-            {{!Cards}}
-           {{#foreach posts}}
-            <div class="row">
-                <div class="card-front animated col s12 m12 l8 offset-l2">
-                    <article class="card">
-                        
+{{#get "posts" limit="all" include="author,tags"}}
+        <div class="zh-div-list">
+            {{#foreach posts}}
+            <div class="row animated fadeInUp">
+                <div class="col s12 m12 l6 offset-l3">
+                    <article class="card hoverable">
                         <div class="card-content">
                             <div class="card-header">
                                 {{!post meta (time posted, tags)}}
                                 <div class="card-meta blue-grey-text text-lighten-2">
-                                    <div class="card-tag"> {{!Tag}}
-                                        <i class="fa fa-hashtag" aria-hidden="true"></i>
+                                    {{> shared_dateControl}}
+                                </div>
+                                
+                                
+                                   <div class="left-align"> {{!Tag}}
                                         {{#foreach tags}}
-                                            <a href="{{url}}" title="{{name}}" class="blue-grey-text text-lighten-2">{{name}}</a>
+                                       <div class="chip hvr-float-shadow"><a href="{{url}}" title="{{name}}" class="blue-grey-text text-lighten-2">{{name}}</a></div>
                                         {{/foreach}}
                                     </div>
-                                    <time class="card-date" datetime="{{date format='YYYY-MM-DD'}}">
-                                        <i class="material-icons">&#xE192;</i> 
-                                        {{date format='YYYY-MM-DD'}}
-                                    </time>
-                                </div>
+                                
                                 {{!Post Title}}
                                 <h2 class="card-title">
-                                    <a href="{{url}}">{{title}}</a>
+                                    <a class="amber-text text-darken-2" href="{{url}}">{{title}}</a>
                                 </h2>
                             </div>
+                            
                             {{!Post Content with limitation of 50 words}}
-                            <p>{{excerpt words="50"}}&hellip;</p>
+                            <p class="grey-text text-darken-1">{{excerpt characters="95"}}&hellip;</p>
                         </div>
-                        <div class="card-action">
-                            <a href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}" class="btn-floating fb intent" data-width="580" height="235">
-                                <i class="fa fa-facebook" aria-hidden="true"></i>
-                            </a>
-                            <a href="https://twitter.com/intent/tweet?text={{encode title}}&amp;url={{url absolute="true"}}" class="btn-floating tw intent" data-width="550" height="235">
-                                <i class="fa fa-twitter" aria-hidden="true"></i>
-                            </a>
-                            <a href="https://plus.google.com/share?url={{url absolute="true"}}" class="btn-floating gp intent" data-width="590" height="530">
-                                <i class="fa fa-google-plus" aria-hidden="true"></i>
-                            </a>
-                            <a class="waves-effect waves-light btn right" href="{{url}}">read more</a>
+                        
+                        <div class="row"></div>
+                        <div class="divider"></div>
+                        
+                        <div class="card-content">
+                            <div class="card-meta">
+                            <a class="waves-effect waves-light btn right hvr-icon-wobble-horizontal amber darken-2" href="{{url}}">More&nbsp;</a>
+                            </div>
+                            
+                            {{! social network share btns}}
+                            {{> "share-post"}}
+                            
+                            
                         </div>
                     </article>
                 </div>
             </div>
             {{/foreach}}
-            {{! Blog pagination }}
-            {{#if pagination}}{{pagination}}{{/if}}
-        </main>
-{{/post}}
-
---}}
+        </div>
+{{/get}}

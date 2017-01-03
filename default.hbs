@@ -4,18 +4,14 @@
     {{> head}}
     {{ghost_head}}
   </head>
-  <body>
+  <body class="{{body_class}}">
     {{> nav_bar}}
-    {{> header_home}} 
+    
+      {{> spacing_oneRow}}
+      {{> spacing_oneRow}}
+      {{> spacing_oneRow}}
+
     {{{body}}}
-      
-    {{!--
-    
-    {{> header_post_page}}
-    
-    --}}
-    
-        
     {{> footer}}
     {{ghost_foot}}
   </body>
