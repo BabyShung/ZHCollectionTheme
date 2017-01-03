@@ -1,6 +1,6 @@
 
-//Return to top
 $(document).ready(function() {
+	//1.Return to top
 	var returnTopID = "#return-to-top";
 	$(window).scroll(function() {
 		if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
@@ -15,7 +15,7 @@ $(document).ready(function() {
 		}, 500);
 	});
 	
-	//iframe delay
+	//2.iframe delay
     $('iframe').easyframe({
   			url: null,
 	  attribute: 'data-src',
@@ -23,18 +23,5 @@ $(document).ready(function() {
 	},function(el) {
   		// remove indicator
   		el.next().removeClass('active').hide();
-
-
 	});
-
-	
-	
-  // var options = [
-//     {selector: 'nav', offset: 0, callback: function(el) {
-//       $('footer ul').css('opacity', '1.0');
-//       Materialize.showStaggeredList($(el));
-//     } }
-//   ];
-//   Materialize.scrollFire(options);
-	
 });
