@@ -1,12 +1,23 @@
 {{! About me}}
 <div class="card Medium hoverable">
     <div class="card collection">
+        
+        {{! blog logo}}
         <div class="card-image">
-            <img class="activator" src="{{asset "img/SM_Iceland.jpg"}}">
+            {{! if you have blog logo, it will show here. Else use default}}
+            {{#if @blog.logo}}
+                <img src="{{@blog.logo}}">
+            {{else}}
+                <img src="{{asset "img/SM_Iceland.jpg"}}">
+            {{/if}}
         </div>
+        
+        {{! about me bottom}}
         <div class="card-content">
             <span class="card-title activator grey-text text-darken-2">About me<i class="material-icons right hvr-pulse">more_vert</i></span>
         </div>
+        
+        {{! intro}}
         <div class="card-reveal">
             <span class="card-title grey-text text-darken-2">About me<i class="material-icons right hvr-shrink">close</i></span>
             
