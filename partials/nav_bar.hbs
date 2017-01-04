@@ -10,63 +10,70 @@
         
       {{! social network icons, and this is not visible on tablet or below}}
       <ul class="right hide-on-med-and-down zh-nav-icons-list">
+          
         {{!linkedin}}
         {{> animated_li_start}}
-            <a href="{{> shared_linkedIn}}" class="btn-floating" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+        <a href="{{> shared_linkedIn}}" class="btn-floating tooltipped" target="_blank" data-position="bottom" data-delay="1000" data-tooltip="LinkedIn"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
         {{> animated_li_end}}
         
-          {{!github}}
+        {{!github}}
         {{> animated_li_start}}
-        <a href="{{> shared_github}}" class="btn-floating" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+        <a href="{{> shared_github}}" class="btn-floating tooltipped" target="_blank" data-position="bottom" data-delay="1000" data-tooltip="Github"><i class="fa fa-github" aria-hidden="true"></i></a>
         {{> animated_li_end}}
           
         {{!stackoverflow}}
         {{> animated_li_start}}
-        <a href="https://stackoverflow.com/users/2954106/babyshung" class="btn-floating" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
+        <a href="https://stackoverflow.com/users/2954106/babyshung" class="btn-floating tooltipped" target="_blank" data-position="bottom" data-delay="1000" data-tooltip="StackOverflow"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
         {{> animated_li_end}}
         
         {{!instagram}}
         {{> animated_li_start}}
-        <a href="https://www.instagram.com/babyshung" class="btn-floating" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        <a href="https://www.instagram.com/babyshung" class="btn-floating tooltipped" target="_blank" data-position="bottom" data-delay="1000" data-tooltip="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
         {{> animated_li_end}}
         
         {{!spotify}}
         {{> animated_li_start}}
-        <a href="https://play.spotify.com/user/babyshung" class="btn-floating" target="_blank"><i class="fa fa-spotify" aria-hidden="true"></i></a>
+        <a href="https://play.spotify.com/user/babyshung" class="btn-floating tooltipped" target="_blank" data-position="bottom" data-delay="1000" data-tooltip="Spotify"><i class="fa fa-spotify" aria-hidden="true"></i></a>
         {{> animated_li_end}}
         
         {{!vimeo}}
         {{> animated_li_start}}
-        <a href="https://vimeo.com/user45600639" class="btn-floating" target="_blank"><i class="fa fa-vimeo" aria-hidden="true"></i></a>
+        <a href="https://vimeo.com/user45600639" class="btn-floating tooltipped" target="_blank" data-position="bottom" data-delay="1000" data-tooltip="Vimeo"><i class="fa fa-vimeo" aria-hidden="true"></i></a>
         {{> animated_li_end}}
         
         {{!facebook}}
         {{#if @blog.facebook }}
         {{> animated_li_start}}
-        <a href="{{facebook_url}}" class="btn-floating" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        <a href="{{facebook_url}}" class="btn-floating tooltipped" target="_blank" data-position="bottom" data-delay="1000" data-tooltip="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
         {{> animated_li_end}}
         {{/if}}
         
         {{!twitter}}
         {{#if @blog.twitter }}
         {{> animated_li_start}}
-        <a href="{{twitter_url}}" class="btn-floating" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        <a href="{{twitter_url}}" class="btn-floating tooltipped" target="_blank" data-position="bottom" data-delay="1000" data-tooltip="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
         {{> animated_li_end}}
         {{/if}}
           
         {{!rss}}
         {{> animated_li_start}}
-        <a href="{{@blog.url}}/subscribe" class="btn-floating"><i class="fa fa-rss" aria-hidden="true"></i></a>
+        <a href="{{@blog.url}}/subscribe" class="btn-floating tooltipped" target="_blank" data-position="bottom" data-delay="1000" data-tooltip="Subscription"><i class="fa fa-rss" aria-hidden="true"></i></a>
         {{> animated_li_end}}
+        
+        {{!blog}}
+        {{> animated_li_start}}
+        <a href="/blog" class="btn-floating tooltipped" target="_blank" data-position="bottom" data-delay="1000" data-tooltip="Blog"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+        {{> animated_li_end}}
+        
           
         {{!mail}}
         {{> animated_li_start}}
-        <a href="{{> shared_mailto}}" class="btn-floating"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+        <a href="{{> shared_mailto}}" class="btn-floating tooltipped" target="_blank" data-position="bottom" data-delay="1000" data-tooltip="Email"><i class="fa fa-envelope" aria-hidden="true"></i></a>
         {{> animated_li_end}}
         
         {{!about}}
         {{> animated_li_start}}
-        <a href="/about" class="btn-floating"><i class="fa fa-user" aria-hidden="true"></i></a>
+        <a href="/about" class="btn-floating tooltipped" target="_blank" data-position="bottom" data-delay="1000" data-tooltip="Me"><i class="fa fa-user" aria-hidden="true"></i></a>
         {{> animated_li_end}}
           
       </ul>
