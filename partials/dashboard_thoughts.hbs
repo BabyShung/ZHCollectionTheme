@@ -6,22 +6,22 @@
         </div>
     
        {{#foreach posts limit="3"}}
-            {{#has tag="Thoughts"}}
+            {{#has tag="thoughts"}}
                 <div class="divider"></div>
-                        <div class="card-content">
-                            <div class="card-header">
-                                {{!post meta (time posted, tags)}}
-                                <div class="card-meta grey-text text-darken-1 right">
-                                    <time class="card-date" datetime="{{date format='DD/MMM/YYYY'}}">
-                                        {{date format='MMM DD'}}
-                                    </time>
-                                </div>
-                                {{!Post Title}}
-                                <a href="{{url}}" class="amber-text text-darken-1">{{title}}</a>
-                            </div>
-                            {{!Post Content with limitation of 50 words}}
-                            <p><a href="{{url}}" class="grey-text text-lighten-1">{{excerpt characters="50"}}&hellip;</a></p>
+                <div class="card-content">
+                    <div class="card-header">
+                        {{!post meta (time posted, tags)}}
+                        <div class="card-meta grey-text text-darken-1 right">
+                            <time class="card-date" datetime="{{date format='DD/MMM/YYYY'}}">
+                                {{date format='MMM DD'}}
+                            </time>
                         </div>
+                        {{!Post Title}}
+                        <a href="{{url}}" class="amber-text text-darken-1">{{title}}</a>
+                    </div>
+                    {{!Post Content with limitation of 50 words}}
+                    <p><a href="{{url}}" class="grey-text text-lighten-1">{{excerpt characters="50"}}&hellip;</a></p>
+                </div>
             {{/has}} 
        {{/foreach}}
     </div>
