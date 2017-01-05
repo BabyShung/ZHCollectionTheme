@@ -456,6 +456,21 @@ ul.zh-nav-icons-list li:nth-child(11){
     animation-delay:2.4s
 }
 
+ul.zh-nav-icons-list li:nth-child(12){
+    -webkit-animation-delay:2.5s;
+    animation-delay:2.5s
+}
+
+ul.zh-nav-icons-list li:nth-child(13){
+    -webkit-animation-delay:2.6s;
+    animation-delay:2.6s
+}
+
+ul.zh-nav-icons-list li:nth-child(14){
+    -webkit-animation-delay:2.7s;
+    animation-delay:2.7s
+}
+
 #collection-col-1 {
     -webkit-animation-delay:0.3s;
     animation-delay:0.3s

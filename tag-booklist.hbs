@@ -1,42 +1,42 @@
 {{!< default}}
 
 {{! Booklist tag}}
+
 <main class="zh-div-list container">
     
-        <div class="row animated fadeInUp">
-                {{#foreach posts}}
-                <div class="col s12 m l4">
-                    <div class="card horizontal hoverable">
-                        <div class="card-image">
-                            {{#if image}}
-                                <img src="{{image}}">
-                            {{else}}
-                                <img src="{{asset "img/SM_Light_small.jpg"}}">
-                            {{/if}}
-                            
-                        </div>
-                        <div class="card-stacked">
-                            <div class="card-header">
-                                
-                                {{!Post Title}}
-                                <h6 class="center-align">
-                                    <a class="amber-text text-darken-2" href="{{url}}">{{title}}</a>
-                                </h6>
-                            </div>
-                            <div class="divider"></div>
-                            <div class="card-content">
-                                <p class="grey-text text-darken-1">{{excerpt characters="40"}}&hellip;</p>
-                            </div>
-                            
-                        </div>
+    {{#foreach posts columns="3"}}
+        {{#if @rowStart}}<div class="row animated fadeInUp">{{/if}}        
+        <div class="col s12 m l4">
+            <div class="card horizontal hoverable">
+                <div class="card-image">
+                    {{#if image}}
+                        <img src="{{image}}">
+                    {{else}}
+                        <img src="{{asset "img/SM_Light_small.jpg"}}">
+                    {{/if}}            
+                </div>
+                <div class="card-stacked">
+                    <div class="card-header">
+
+                        {{!Post Title}}
+                        <h6 class="center-align">
+                            <a class="amber-text text-darken-2" href="{{url}}">{{title}}</a>
+                        </h6>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="card-content">
+                        <p class="grey-text text-darken-1">{{excerpt characters="40"}}&hellip;</p>
                     </div>
                 </div>
-                
-                {{/foreach}}
-
-
+            </div>
         </div>
+        {{#if @rowEnd}}</div>{{/if}}
+    {{/foreach}}
+        
     {{! Blog pagination }}
+    {{> spacing_oneRow}}
+    {{> spacing_oneRow}}
+    {{> spacing_oneRow}}
     {{#if pagination}}{{pagination}}{{/if}}
 </main>
 
