@@ -16,11 +16,13 @@
                 <div class="card-image">
                     {{> spacing_oneRow}}
                     <div class="container">
-                        {{#if image}}
-                            <img src="{{image}}">
-                        {{else}}
-                            <img src="{{asset "img/SM_Light_small.jpg"}}">
-                        {{/if}}  
+                         <a href="{{url}}">
+                            {{#if image}}
+                                <img src="{{image}}">
+                            {{else}}
+                                <img src="{{asset "img/SM_Light_small.jpg"}}">
+                            {{/if}}  
+                        </a>
                         {{> spacing_oneRow}}
                     </div>
                 </div>
@@ -36,7 +38,7 @@
                     </div>
                     <div class="divider container"></div>
                     <div class="card-content">
-                        <p class="grey-text text-darken-1">{{excerpt characters="40"}}&hellip;</p>
+                        <a href="{{url}}"><p class="grey-text text-darken-1">{{excerpt characters="40"}}&hellip;</p></a>
                     </div>
                 </div>
             </div>

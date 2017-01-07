@@ -21,8 +21,13 @@
                             </div>
                         </div>
                         <div class="right-align">
+                            <!-- Output tag list-->
                             {{#foreach tags}}
-                                <div class="chip hvr-float-shadow"><a href="{{url}}" title="{{name}}" class="blue-grey-text text-lighten-2">{{name}}</a></div>
+                                <div class="chip hvr-float-shadow">
+                                    <a href="{{url}}" title="{{name}}" class="blue-grey-text text-lighten-2">
+                                        {{name}}
+                                    </a>
+                                </div>
                             {{/foreach}}
                         </div> 
                     </div>
