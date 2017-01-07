@@ -3,7 +3,7 @@
     <ul class="collection">
         <li>
             <div class="card-action">
-                <a href="/blog" target="_blank"><i class="fa fa-mobile" aria-hidden="true"></i> Projects</a>
+                <a href="/blog" target="_blank" class="{{>shared_db_header_hover}}"><i class="fa fa-desktop" aria-hidden="true"></i> Projects</a>
             </div>
         </li>
         <div class="divider"></div>
@@ -12,7 +12,7 @@
             {{#foreach posts limit="3"}}
                 <li class="collection-item avatar">
                     {{#if image}}
-                    <a href="{{meta_title}}" target="_blank"><img src="{{image}}" alt="" class="circle hoverable"></a>
+                        <a href="{{meta_title}}" target="_blank"><img src="{{image}}" alt="" class="circle hoverable"></a>
                     {{else}}
                         <img src="{{asset "img/SM_Light_small.jpg"}}">
                     {{/if}} 
