@@ -13,11 +13,10 @@
         {{! book }}
         {{#get "posts" limit="all" filter="tag:booklist"}}
             {{#foreach posts limit="3"}}
-                <li class="collection-item"><div>{{title}}<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div></li>
-                {{!--
-                <li class="collection-item"><a href="#!" class="grey-text text-darken-1">{{title}}<span class="new badge orange right" data-badge-caption="">Reading</span></a></li>
-                --}}
-                
+                <li class="collection-item">
+                    <span class="new badge orange right" data-badge-caption="">Reading</span>
+                    <a href="#!" class="grey-text text-darken-1">{{title}}</a>
+                </li>
            {{/foreach}}
         {{/get}}
         

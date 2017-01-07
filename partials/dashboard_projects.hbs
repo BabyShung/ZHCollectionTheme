@@ -12,12 +12,12 @@
             {{#foreach posts limit="3"}}
                 <li class="collection-item avatar">
                     {{#if image}}
-                        <img src="{{image}}" alt="" class="circle hoverable">
+                    <a href="{{meta_title}}" target="_blank"><img src="{{image}}" alt="" class="circle hoverable"></a>
                     {{else}}
                         <img src="{{asset "img/SM_Light_small.jpg"}}">
                     {{/if}} 
-                    <span class="title">{{title}}</span>
-                    <p><a href="{{url}}" class="grey-text text-lighten-1">{{excerpt characters="55"}}&hellip;</a></p>
+                    <span class="title"><a href="{{meta_title}}" class="grey-text text-darken-2" target="_blank">{{title}}</a></span>
+                    <p><a href="{{meta_title}}" class="grey-text text-lighten-1" target="_blank">{{excerpt characters="55"}}&hellip;</a></p>
                 </li>
            {{/foreach}}
         {{/get}}
