@@ -8,24 +8,33 @@
     {{> spacing_oneRow}} 
     {{#foreach posts columns="3"}}
         {{#if @rowStart}}<div class="row animated fadeInUp">{{/if}}        
-        <div class="col s12 m l4">
+        
+        <div class="col s12 m8 offset-m2 l4">
+       
             <div class="card horizontal hoverable">
+                <!-- Image on the left-->
                 <div class="card-image">
-                    {{#if image}}
-                        <img src="{{image}}">
-                    {{else}}
-                        <img src="{{asset "img/SM_Light_small.jpg"}}">
-                    {{/if}}            
+                    {{> spacing_oneRow}}
+                    <div class="container">
+                        {{#if image}}
+                            <img src="{{image}}">
+                        {{else}}
+                            <img src="{{asset "img/SM_Light_small.jpg"}}">
+                        {{/if}}  
+                        {{> spacing_oneRow}}
+                    </div>
                 </div>
+                <!--Title and description-->
                 <div class="card-stacked">
-                    <div class="card-header">
-
+                    <div class="card-header container">
+                        {{> spacing_oneRow}}
                         {{!Post Title}}
                         <h6 class="center-align">
                             <a class="amber-text text-darken-2" href="{{url}}">{{title}}</a>
                         </h6>
+                        {{> spacing_oneRow}}
                     </div>
-                    <div class="divider"></div>
+                    <div class="divider container"></div>
                     <div class="card-content">
                         <p class="grey-text text-darken-1">{{excerpt characters="40"}}&hellip;</p>
                     </div>
@@ -43,14 +52,16 @@
     {{> spacing_oneRow}}
     {{> spacing_oneRow}}
     
-    <div class="card row animated fadeInUp hoverable">
+    <div class="card row animated fadeInUp hoverable" style="border-radius:90px;">
+        <div class="container">
         <div class="col s12 card-content">
             <h5 class="left">过去的一年我又少读了多少本书呢<br>如果没有好的开始 不妨试试一个坏的<br>等待最好的时机 不如行动在当下
             </h5>
             <a href="/about" class="right">
-                <img src="{{> shared_favicon}}" alt="" class="circle  hoverable">
-                <h5 class="black-text zh-blogTitle">-  {{@blog.title}}</h5>
+                <img src="{{> shared_favicon}}" alt="" class="circle hoverable">
+                <h5 class="black-text zh-blogTitle">-  RnBlue</h5>
             </a>    
+        </div>
         </div>
     </div>
 </main>
