@@ -11,10 +11,16 @@
         <div class="divider"></div>
    
         {{! book }}
-        {{#get "posts" limit="all" filter="tag:booklist"}}
+        {{#get "posts" limit="all" filter="tag:booklist" include="tags"}}
             {{#foreach posts limit="3"}}
                 <li class="collection-item">
-                    <span class="new badge orange right" data-badge-caption="">Reading</span>
+                    {{#has tag="reading"}}
+                        <span class="new badge green right" data-badge-caption="">Reading</span>
+                    {{/has}}
+                    {{#has tag="done"}}
+                        <span class="new badge orange darken-1 right" data-badge-caption="">Done</span>
+                    {{/has}}
+                    
                     <a href="#!" class="grey-text text-darken-1">{{title}}</a>
                 </li>
            {{/foreach}}
