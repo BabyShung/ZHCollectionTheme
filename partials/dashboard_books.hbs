@@ -1,20 +1,39 @@
 {{! BOOKS BLOG}}
 <div class="card Medium hoverable">
-    <div class="collection">
-        <div class="card-image">
+    <ul class="collection">
+        <li>
+        <div class="card-image waves-effect waves-block waves-light">
               <img src={{asset "img/SM_Light.jpg"}}>
               <span class="card-title grey-text text-darken-2">Books I'm reading</span>
         </div>
-    
+        </li>
+        
+        <div class="divider"></div>
+   
         {{! book }}
-        <a href="#!" class="collection-item grey-text text-darken-1">《自控力》<span class="new badge orange" data-badge-caption="">Reading</span></a>
-        <a href="#!" class="collection-item grey-text text-darken-1">《中国人太多了吗》<span class="new badge green darken-1" data-badge-caption="">Done</span></a>
-        <a href="#!" class="collection-item grey-text text-darken-1">《从0到1》</a>
+        {{#get "posts" limit="all" filter="tag:booklist" include="tags"}}
+            {{#foreach posts limit="3"}}
+                <li class="collection-item">
+                    
+                    <!-- show tags -->
+                    {{#has tag="reading"}}
+                        <span class="new badge green right" data-badge-caption="">Reading</span>
+                    {{/has}}
+                    {{#has tag="done"}}
+                        <span class="new badge orange darken-1 right" data-badge-caption="">Done</span>
+                    {{/has}}
+                    
+                    <a href="{{url}}" class="grey-text text-darken-1">{{title}}</a>
+                </li>
+           {{/foreach}}
+        {{/get}}
         
         {{! book list}}
-        <a href="tag/booklist" target="_blank" class="collection-item grey-text text-darken-1 center-align hvr-icon-wobble-horizontal hvr-shutter-in-horizon"><i class="fa fa-book" aria-hidden="true"></i> Book List</a>
+        <li>
+            <a href="tag/booklist" class="collection-item grey-text text-darken-1 center-align hvr-icon-wobble-horizontal hvr-shutter-in-horizon"><i class="fa fa-book" aria-hidden="true"></i> Book List</a>
+        </li>
 
-    </div>
+    </ul>
 </div>
 
             

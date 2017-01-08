@@ -1,14 +1,27 @@
 {{! My Projects}}
 <div class="card Medium hoverable">
-    <div class="collection">
-        <div class="card-action">
-            <a href="/blog" target="_blank"><i class="fa fa-mobile" aria-hidden="true"></i> Projects</a>
-        </div>
+    <ul class="collection">
+        <li>
+            <div class="card-action">
+                <a href="{{>shared_github}}" target="_blank" class="{{>shared_db_header_hover}}"><i class="fa fa-desktop" aria-hidden="true"></i> Projects</a>
+            </div>
+        </li>
         <div class="divider"></div>
-        <div class="card-content">
-            {{> shared_comingsoon}}
-        </div>
-    </div>
+        
+        {{#get "posts" limit="all" filter="tag:projects"}}
+            {{#foreach posts limit="2"}}
+                <li class="collection-item avatar">
+                    {{#if image}}
+                        <a href="{{meta_title}}" target="_blank"><img src="{{image}}" alt="" class="circle hoverable"></a>
+                    {{else}}
+                        <img src="{{asset "img/SM_Light_small.jpg"}}">
+                    {{/if}} 
+                    <span class="title"><a href="{{meta_title}}" class="grey-text text-darken-2" target="_blank">{{title}}</a></span>
+                    <p><a href="{{meta_title}}" class="grey-text text-lighten-1" target="_blank">{{excerpt characters="75"}}&hellip;</a></p>
+                </li>
+           {{/foreach}}
+        {{/get}}
+    </ul>
 </div>
 
             

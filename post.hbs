@@ -2,47 +2,55 @@
 {{#post}}
     <main>
         <div class="row">
-            <div class="post col s12 m12 l6 offset-l3">
-                    <article class="animated fadeIn card hoverable">
-                        
-                        <div class="card-action">
-                            <h3 class="hvr-forward grey-text text-darken-3">{{title}}</h3>
-                            {{> shared_dateControl}}
-                        </div>
-                        
-                        <div class="card-content  blue-grey-text text-lighten-2">
-                                   <div class="right-align"> {{!Tag}}
-                                        {{#foreach tags}}
-                                       <div class="chip hvr-float-shadow"><a href="{{url}}" title="{{name}}" class="blue-grey-text text-lighten-2">{{name}}</a></div>
-                                        {{/foreach}}
-                                    </div>
+            <div class="post col s12 m12 l8 offset-l2">
+                <article class="animated fadeIn card hoverable">  
+                    <div class="card-content">
+                        <div class="card-content">
                             
+                            {{> shared_dateControl}}
+                            <div class="valign-wrapper">
+                                {{! ** tag name **}}
+                                {{#has tag="booklist"}}
+                                    {{#if image}}
+                                        <img src="{{image}}" style="width:15%;" class="">
+                                    {{/if}}
+                                    <div class="card-content"><h4 class="hvr-forward grey-text text-darken-3 valign">{{title}}</h4></div>
+                                {{else}}
+                                    <div class="card-content"><h3 class="hvr-forward grey-text text-darken-3 valign">{{title}}</h3></div>
+                                {{/has}}
+                            </div>
                         </div>
-                        <div class="card-action grey-text text-darken-3 zh-post-content">
+                        <div class="right-align">
+                            <!-- Output tag list-->
+                            {{#foreach tags}}
+                                <div class="chip hvr-float-shadow">
+                                    <a href="{{url}}" title="{{name}}" class="blue-grey-text text-lighten-2">
+                                        {{name}}
+                                    </a>
+                                </div>
+                            {{/foreach}}
+                        </div> 
+                    </div>
+                        
+                    <div class="divider"></div>
+                    {{> spacing_oneRow}}
+                    {{> spacing_oneRow}}
+                    <div class="card-content">
+                        <div class="grey-text text-darken-3 zh-post-content card-content">
                             {{!Content here}}
                             {{content}}
                         </div>
-                            <div class="row"></div>
-                            <div class="row"></div>
+                    </div>
+                    {{> spacing_oneRow}}
+                    {{> spacing_oneRow}}
                         
-                        {{> pagination}}
-                        
-                        
-                        {{! disqus }}
-                        <div class="card-action">
-                            {{> disqus}}
-                        </div>
-                        
-                    </article>
-                </div>
+                    {{> pagination}}                
+                    
+                    <div class="divider"></div>
+                    {{! disqus }}
+                    <div class="card-content"><div class="card-content">{{> disqus}}</div></div> 
+                </article>
             </div>
-            
-            
-            
-
-            
-            
-        </main>
-
-
+        </div>
+    </main>
 {{/post}}

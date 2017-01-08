@@ -3,7 +3,7 @@
     <div class="card collection">
         
         {{! blog logo}}
-        <div class="card-image">
+        <div class="card-image waves-effect waves-block waves-light">
             {{! if you have blog logo, it will show here. Else use default}}
             {{#if @blog.logo}}
                 <img src="{{@blog.logo}}">
@@ -29,29 +29,32 @@
                 </div>
             </a>
             
-            <a class="grey-text text-darken-2" href="{{> shared_company}}" target="_blank">
-                <div class="chip hvr-float-shadow">
-                    <img src="{{asset "img/bio-adc.png"}}" alt="" class="circle">Alarm.com
-                </div>
-            </a>             
-            
-            <br><br> 
             <a class="grey-text text-darken-2" href="{{> shared_github}}" target="_blank">
                 <div class="chip hvr-float-shadow">
                     <img src="{{asset "img/bio-iOS.png"}}" alt="" class="circle">iOS
                 </div>
             </a>
             
+            <br><br>
+            
+            <a class="grey-text text-darken-2" href="{{> shared_company}}" target="_blank">
+                <div class="chip hvr-float-shadow">
+                    <img src="{{asset "img/bio-adc.png"}}" alt="" class="circle">Working at Alarm.com
+                </div>
+            </a>
+            
+<!--
             <a class="grey-text text-darken-2" href="https://github.com/BabyShung/HaoCameraDemo" target="_blank">
                 <div class="chip hvr-float-shadow">
                     <img src="{{asset "img/bio-bluecheese.png"}}" alt="" class="circle">BlueCheese
                 </div>
             </a>
+-->
             
             <br><br> 
             <a class="grey-text text-darken-2" href="https://cs.uiowa.edu" target="_blank">
                 <div class="chip hvr-float-shadow">
-                    <img src="{{asset "img/bio-uiowa.png"}}" alt="" class="circle">UIowa
+                    <img src="{{asset "img/bio-uiowa.png"}}" alt="" class="circle">Graduated from UIowa
                 </div>
             </a>
             
