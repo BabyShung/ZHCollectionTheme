@@ -9,7 +9,7 @@
         <div class="divider"></div>
         
         {{#get "posts" limit="all" filter="tag:projects"}}
-            {{#foreach posts limit="2"}}
+            {{#foreach posts limit="3"}}
                 <li class="collection-item avatar">
                     {{#if image}}
                         <a href="{{meta_title}}" target="_blank"><img src="{{image}}" alt="" class="circle hoverable"></a>
