@@ -21,6 +21,11 @@ Since the page for showing all the posts is not in index.hbs, I moved it to a st
 
 We just need to create a new post and turn it to a static page in the post 'Post Settings' and set the 'Post URL' to 'blog'.
 
+**4.BookList**
+There is actually a booklist section.
+What you want to do first is to make sure you included dashboard_books.hbs in index.hbs.
+And when you create your first "book" post, add a new tag "Booklist".
+
 #Others
 In the index.hbs, you can arrange the dashboard cards based on what you need.
 
