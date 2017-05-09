@@ -3,6 +3,7 @@
 Ghost theme for my website: http://www.babyshung.com
 
 #Modules need to setup manually
+
 **1.Turn on Labs feature**
 
 In your admin page, go to 'Labs' and turn on features 'Public API' and 'Subscribers'
