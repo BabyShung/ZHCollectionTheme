@@ -2,16 +2,25 @@
 <div class="card Medium hoverable">
     <div class="collection">
         <div class="card-action">
-            <a target="_blank" class="{{>shared_db_header_hover}}"><i class="fa fa-pencil" aria-hidden="true"></i> iOS</a>
+            <a href="tag/ios" target="_blank" class="{{>shared_db_header_hover}}"><i class="fa fa-pencil" aria-hidden="true"></i> iOS</a>
         </div>
+        <!--Foreach Get iOS -->
+        {{#get "posts" limit="all" filter="tag:ios"}} {{#foreach posts limit="3"}}
         <div class="divider"></div>
         <div class="card-content">
-            {{> shared_comingsoon}}
+            <div class="card-header">
+                {{!post meta (time posted, tags)}}
+                <div class="card-meta grey-text text-darken-1 right">
+                    <time class="card-date" datetime="{{date format='DD/MMM/YYYY'}}">
+                                    {{date format='MMM DD'}}
+                                </time>
+                </div>
+                {{!Post Title}}
+                <a href="{{url}}" class="light-blue-text text-darken-2">{{title}}</a>
+            </div>
+            {{!Post Content with limitation of 50 words}}
+            <p><a href="{{url}}" class="grey-text text-lighten-1">{{excerpt characters="50"}}&hellip;</a></p>
         </div>
+        {{/foreach}} {{/get}}
     </div>
 </div>
-
-            
-
-
-

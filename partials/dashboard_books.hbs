@@ -2,9 +2,9 @@
 <div class="card Medium hoverable">
     <ul class="collection">
         <li>
-        <div class="card-image waves-effect waves-block waves-light">
+        <div class="card-image">
               <img src={{asset "img/SM_Light.jpg"}}>
-              <span class="card-title grey-text text-darken-2">Books I'm reading</span>
+              <span class="card-title grey-text text-darken-1">Books I'm reading</span>
         </div>
         </li>
         
@@ -20,7 +20,7 @@
                         <span class="new badge green right" data-badge-caption="">Reading</span>
                     {{/has}}
                     {{#has tag="done"}}
-                        <span class="new badge orange darken-1 right" data-badge-caption="">Done</span>
+                        <span class="new badge light-blue darken-3 right" data-badge-caption="">Done</span>
                     {{/has}}
                     
                     <a href="{{url}}" class="grey-text text-darken-1">{{title}}</a>
@@ -30,7 +30,7 @@
         
         {{! book list}}
         <li>
-            <a href="tag/booklist" class="collection-item grey-text text-darken-1 center-align hvr-icon-wobble-horizontal hvr-shutter-in-horizon"><i class="fa fa-book" aria-hidden="true"></i> Book List</a>
+            <a href="tag/booklist" class="collection-item light-blue-text text-darken-3 center-align hvr-icon-wobble-horizontal hvr-shutter-in-horizon"><i class="fa fa-book" aria-hidden="true"></i> Book List</a>
         </li>
 
     </ul>

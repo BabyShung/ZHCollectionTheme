@@ -5,7 +5,7 @@
     <div class="row zh-dashboard-list">
         
         {{! First column}}
-        <div id="collection-col-1" class="animated fadeInUp col s12 m7 l4">
+        <div id="collection-col-1" class="col s12 m7 l4">
         
             {{! About me}}
             {{> dashboard_aboutme}}
@@ -13,16 +13,15 @@
             {{! BOOKS BLOG}}
             {{> dashboard_books}}
 
-            {{! iOS Blog}}
-            {{> dashboard_ios}}
+            {{> dashboard_contactme}}
             
         </div>
         
         {{! Second column}}
-        <div id="collection-col-2" class="animated fadeInUp col s12 m7 l4">
+        <div id="collection-col-2" class="col s12 m7 l4">
             
-            {{! Projects}}
-            {{> dashboard_projects}}
+            {{! iOS Blog}}
+            {{> dashboard_ios}}
             
             {{! GALLERY}}
             {{> dashboard_gallery}}  
@@ -33,8 +32,11 @@
         </div>
         
         {{! Third column}}
-        <div id="collection-col-3" class="animated fadeInUp col s12 m7 l4">
+        <div id="collection-col-3" class="col s12 m7 l4">
 
+            {{! Projects}}
+            {{> dashboard_projects}}
+            
             {{! thoughts blog}}
             {{> dashboard_thoughts}}
 

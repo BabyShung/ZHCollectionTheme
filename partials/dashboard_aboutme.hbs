@@ -1,9 +1,8 @@
 {{! About me}}
-<div class="card Medium hoverable">
-    <div class="card collection">
+    <div class="card collection hoverable">
         
         {{! blog logo}}
-        <div class="card-image waves-effect waves-block waves-light">
+        <div class="card-image">
             {{! if you have blog logo, it will show here. Else use default}}
             {{#if @blog.logo}}
                 <img src="{{@blog.logo}}">
@@ -14,16 +13,16 @@
         
         {{! about me bottom}}
         <div class="card-content">
-            <span class="card-title activator grey-text text-darken-2">About me<i class="material-icons right hvr-pulse">more_vert</i></span>
+            <span class="card-title activator light-blue-text text-darken-3">About me<i class="material-icons right hvr-pulse">more_vert</i></span>
         </div>
         
         {{! intro}}
         <div class="card-reveal">
-            <span class="card-title grey-text text-darken-2">About me<i class="material-icons right hvr-shrink">close</i></span>
+            <span class="card-title grey-text text-darken-1">About me<i class="material-icons right hvr-shrink">close</i></span>
             
             <div class="row"></div>
             
-            <a class="grey-text text-darken-2" href="/about" target="_blank">
+            <a class="grey-text text-darken-1" href="/about" target="_blank">
                 <div class="chip hvr-float-shadow">
                     <img src="{{asset "img/favicon.png"}}" alt="" class="circle">About me
                 </div>
@@ -37,22 +36,14 @@
             
             <br><br>
             
-            <a class="grey-text text-darken-2" href="{{> shared_company}}" target="_blank">
+            <a class="grey-text text-darken-1" href="{{> shared_company}}" target="_blank">
                 <div class="chip hvr-float-shadow">
                     <img src="{{asset "img/bio-adc.png"}}" alt="" class="circle">Working at Alarm.com
                 </div>
             </a>
             
-<!--
-            <a class="grey-text text-darken-2" href="https://github.com/BabyShung/HaoCameraDemo" target="_blank">
-                <div class="chip hvr-float-shadow">
-                    <img src="{{asset "img/bio-bluecheese.png"}}" alt="" class="circle">BlueCheese
-                </div>
-            </a>
--->
-            
             <br><br> 
-            <a class="grey-text text-darken-2" href="https://cs.uiowa.edu" target="_blank">
+            <a class="grey-text text-darken-1" href="https://cs.uiowa.edu" target="_blank">
                 <div class="chip hvr-float-shadow">
                     <img src="{{asset "img/bio-uiowa.png"}}" alt="" class="circle">Graduated from UIowa
                 </div>
@@ -60,5 +51,4 @@
             
         </div>
     </div>
-</div>
 
