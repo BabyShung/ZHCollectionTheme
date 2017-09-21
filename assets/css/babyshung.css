@@ -50,6 +50,21 @@ nav a.brand-logo,
     font-family: 'Dancing Script', cursive;
 }
 
+.post-content {
+
+	overflow: hidden;
+}
+
+.post-content img {
+	width: 80%;
+	height: auto;
+}
+
+.post-content img {
+    display: block;
+    margin: 0 auto;
+}
+
 
 /** **/
 
