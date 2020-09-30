@@ -31,3 +31,17 @@ And when you create your first "book" post, add a new tag "Booklist".
 In the index.hbs, you can arrange the dashboard cards based on what you need.
 
 In the nav_bar.hbs, you can customize what icons you want to show.
+
+# Contributing
+*To help us improve the site:*
+
+1.Fork it
+
+2.Create your feature branch (git checkout -b my-new-feature)
+
+3.Commit your changes (git commit -am 'Add some feature')
+
+4.Push to the branch (git push origin my-new-feature)
+
+5.Create new Pull Request
+
