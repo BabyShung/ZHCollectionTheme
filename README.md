@@ -24,7 +24,7 @@ We just need to create a new post and turn it to a static page in the post 'Post
 
 **4.BookList**
 There is actually a booklist section.
-What you want to do first is to make sure you included dashboard_books.hbs in index.hbs.
+First you can make sure you included dashboard_books.hbs in index.hbs.
 And when you create your first "book" post, add a new tag "Booklist".
 
 #Others
