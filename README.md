@@ -16,7 +16,7 @@ If you don't, just create a post and do the above steps.
 
 You need to set up the below before you go to http://[yourSite]/blog
 
-Since the page for showing all the posts is not in the index.has, I moved it to a static page.
+Since the page for showing all the posts is not in the index.hbs, I moved it to a static page.
 
 We just need to create a new post and turn it to a static page in the post 'Post Settings' and set the 'Post URL' to 'blog'.
 
